@@ -4,64 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Carlos Ruiz | Video Editor</title>
+
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- LANGUAGE SWITCH -->
+  <button id="langToggle" class="lang-btn">EN</button>
+
   <!-- HERO -->
-  <section class="hero">
-    <h1>Carlos Daniel Ruiz Cabrera</h1>
-    <p>Video Editor especializado en contenido para redes sociales</p>
+  <section class="hero fade">
+    <h1 data-es="Carlos Daniel Ruiz Cabrera"
+        data-en="Carlos Daniel Ruiz Cabrera"></h1>
+
+    <p data-es="Editor de video especializado en contenido para redes sociales"
+       data-en="Video editor specialized in social media content"></p>
   </section>
 
-  <!-- PORTAFOLIO -->
-  <section class="portfolio">
-    <h2>Trabajos Destacados</h2>
+  <!-- PORTFOLIO -->
+  <section class="portfolio fade">
+    <h2 data-es="Trabajos Destacados"
+        data-en="Featured Work"></h2>
 
     <div class="video-grid">
-      <!-- VIDEO 1 -->
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/VIDEO_1" frameborder="0" allowfullscreen></iframe>
-        <span>Contenido para Marca Personal</span>
+      <div class="video-card slide">
+        <iframe src="https://www.youtube.com/embed/VIDEO_1" allowfullscreen></iframe>
+        <span data-es="Marca personal"
+              data-en="Personal brand"></span>
       </div>
 
-      <!-- VIDEO 2 -->
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/VIDEO_2" frameborder="0" allowfullscreen></iframe>
-        <span>Empresa Juntos</span>
+      <div class="video-card slide">
+        <iframe src="https://www.youtube.com/embed/VIDEO_2" allowfullscreen></iframe>
+        <span data-es="Empresa Juntos"
+              data-en="Juntos company"></span>
       </div>
 
-      <!-- VIDEO 3 -->
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/VIDEO_3" frameborder="0" allowfullscreen></iframe>
-        <span>Más Que Dinero</span>
+      <div class="video-card slide">
+        <iframe src="https://www.youtube.com/embed/VIDEO_3" allowfullscreen></iframe>
+        <span data-es="Más Que Dinero"
+              data-en="Más Que Dinero"></span>
       </div>
 
-      <!-- VIDEO 4 -->
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/VIDEO_4" frameborder="0" allowfullscreen></iframe>
-        <span>Podcast Clips</span>
+      <div class="video-card slide">
+        <iframe src="https://www.youtube.com/embed/VIDEO_4" allowfullscreen></iframe>
+        <span data-es="Podcast clips"
+              data-en="Podcast clips"></span>
       </div>
     </div>
   </section>
 
-  <!-- SOBRE MI -->
-  <section class="about">
-    <h2>Sobre mí</h2>
-    <p>
-      Soy editor de video con experiencia creando contenido para marcas personales,
-      empresas y proyectos digitales. He trabajado como editor para <strong>Juntos</strong>
-      y <strong>Más Que Dinero</strong>, desarrollando videos optimizados para redes sociales
-      con enfoque en retención, ritmo y claridad del mensaje.
-      <br><br>
-      Actualmente también edito clips para podcast, adaptando contenido largo a formatos
-      dinámicos y atractivos para plataformas sociales.
+  <!-- ABOUT -->
+  <section class="about fade">
+    <h2 data-es="Sobre mí"
+        data-en="About me"></h2>
+
+    <p data-es="Soy editor de video con experiencia trabajando con marcas personales y empresas como Juntos y Más Que Dinero. Mi enfoque está en la retención, el ritmo y la claridad del mensaje. Actualmente también edito clips para podcasts, transformando contenido largo en piezas dinámicas para redes sociales."
+       data-en="I am a video editor with experience working with personal brands and companies such as Juntos and Más Que Dinero. My focus is on retention, pacing, and clear storytelling. I also edit podcast clips, transforming long-form content into engaging social media videos.">
     </p>
   </section>
 
-  <!-- FOOTER -->
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/message/G3JMM5YMLMASA1"
+     class="whatsapp-btn"
+     target="_blank"
+     aria-label="Contactar por WhatsApp">
+    WhatsApp
+  </a>
+
   <footer>
     <p>© 2026 · Carlos Daniel Ruiz Cabrera</p>
   </footer>
