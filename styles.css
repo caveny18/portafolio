@@ -11,19 +11,32 @@ body {
   overflow-x: hidden;
 }
 
-/* Language Button */
+/* =========================
+   LANGUAGE BUTTON (ESTÉTICO)
+   ========================= */
 .lang-btn {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: #1f1f1f;
+  background: rgba(30, 30, 30, 0.9);
   color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 16px;
+  border-radius: 999px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
   z-index: 1000;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 /* HERO */
@@ -73,7 +86,7 @@ body {
 
 .video-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
 .video-card iframe {
@@ -107,26 +120,39 @@ footer {
   color: #777;
 }
 
-/* WHATSAPP */
-.whatsapp-btn {
+/* =========================
+   WHATSAPP BURBUJA PRO
+   ========================= */
+.whatsapp-bubble {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background: #25D366;
-  color: white;
-  padding: 14px 20px;
-  border-radius: 30px;
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(135deg, #25D366, #1ebe5d);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  font-weight: 600;
-  box-shadow: 0 10px 30px rgba(37,211,102,0.4);
-  transition: transform 0.3s ease;
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+  transition: all 0.3s ease;
+  z-index: 1000;
 }
 
-.whatsapp-btn:hover {
-  transform: scale(1.08);
+.whatsapp-bubble:hover {
+  transform: scale(1.12);
+  box-shadow: 0 18px 40px rgba(37, 211, 102, 0.65);
 }
 
-/* ANIMATIONS */
+.wa-icon {
+  font-size: 1.6rem;
+  color: white;
+}
+
+/* =========================
+   ANIMATIONS
+   ========================= */
 .fade {
   opacity: 0;
   transform: translateY(30px);
